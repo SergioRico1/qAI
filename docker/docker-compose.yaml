@@ -1,8 +1,10 @@
 version: '3.1'
 services:
   # API service
-  api:
-    image: langgenius/dify-api:0.3.3
+    api:
+    build:
+      context: ../api
+      dockerfile: Dockerfile
     restart: always
     environment:
       # Startup mode, 'api' starts the API server.
@@ -156,7 +158,9 @@ services:
 
   # Frontend web application.
   web:
-    image: langgenius/dify-web:0.3.3
+    build:
+      context: ../web
+      dockerfile: Dockerfile
     restart: always
     environment:
       EDITION: SELF_HOSTED
