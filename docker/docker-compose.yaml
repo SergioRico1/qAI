@@ -2,9 +2,7 @@ version: '3.1'
 services:
   # API service
     api:
-    build:
-      context: ../api
-      dockerfile: Dockerfile
+    image: langgenius/dify-api:0.3.3
     restart: always
     environment:
       # Startup mode, 'api' starts the API server.
@@ -113,8 +111,7 @@ services:
   # The Celery worker for processing the queue.
   worker:
     build:
-      context: ../api
-      dockerfile: Dockerfile
+    image: langgenius/dify-api:0.3.3
     restart: always
     environment:
       # Startup mode, 'worker' starts the Celery worker for processing the queue.
