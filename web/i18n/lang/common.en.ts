@@ -50,7 +50,7 @@ const translation = {
         'How much to penalize new tokens based on their existing frequency in the text so far. Decreases the model\'s likelihood to repeat the same line verbatim.',
       maxToken: 'Max token',
       maxTokenTip:
-        'Max tokens generated is 2,048 or 4,000, depending on the model. Prompt and completion share this limit. One token is roughly 1 English character.',
+        'Max tokens depending on the model. Prompt and completion share this limit. One token is roughly 1 English character.',
       setToCurrentModelMaxTokenTip: 'Max token is updated to the maximum token of the current model 4,000.',
     },
     tone: {
@@ -110,7 +110,7 @@ const translation = {
     normal: 'Normal',
     normalTip: 'Only can use apps，can not build apps',
     inviteTeamMember: 'Add team member',
-    inviteTeamMemberTip: 'He can access your team data directly after signing in.',
+    inviteTeamMemberTip: 'They can access your team data directly after signing in.',
     email: 'Email',
     emailInvalid: 'Invalid Email Format',
     emailPlaceholder: 'Input Email',
