@@ -112,7 +112,9 @@ services:
   # worker service
   # The Celery worker for processing the queue.
   worker:
-    image: langgenius/dify-api:0.3.3
+    build:
+      context: ../api
+      dockerfile: Dockerfile
     restart: always
     environment:
       # Startup mode, 'worker' starts the Celery worker for processing the queue.
