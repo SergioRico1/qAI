@@ -110,7 +110,6 @@ services:
   # worker service
   # The Celery worker for processing the queue.
   worker:
-    build:
     image: langgenius/dify-api:0.3.3
     restart: always
     environment:
