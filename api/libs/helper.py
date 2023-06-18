@@ -114,7 +114,7 @@ def _get_float(value):
 
 
 def supported_language(lang):
-    if lang in ['en-US', 'zh-Hans']:
+    if lang in ['en-US', 'zh-Hans', 'es-ES']:
         return lang
 
     error = ('{lang} is not a valid language.'
